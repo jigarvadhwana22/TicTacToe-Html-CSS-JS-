@@ -1,0 +1,87 @@
+.container{
+	width: 340px;/* we need perfect sq thts y 340h and 340w*/
+	height:340px;
+	margin-top:200px;
+	margin: auto; /* it will align all content into center*/
+	margin-left: 520px;/*wrt to h1 alignment*/
+	
+
+}
+body{
+	background-color: lightgray;
+}
+h1{
+	font-size: 60px;
+	text-align: center;/* so its centered wrt to board*/
+	margin-bottom: 100px;
+	margin-top: 85px;
+	text-shadow: 3px 2px 1px green;
+	text-decoration: underline;
+}
+/* wrt cell*/
+.quadrant{
+	width:100px;/*each cell would be 100px wide and 100px long*/
+	height:100px;
+	float: left;
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-family: sans-serif;
+	font-size:75px;/*size of X nd 0*/
+	color:black;
+
+}
+
+.quadrant:hover{
+	background-color: lightgreen;
+}
+#q0,#q1,#q2,#q3,#q4,#q5{
+	border-bottom: 2px solid black;
+	/*q0 - q2 => first botm line & q3 - q5 => second botm line
+	here 100width is taken care of*/
+}
+
+#q1,#q2,#q4,#q5,#q7,#q8,#q6{
+	
+	border-left: 2px solid black;
+	/*here (100)height is taken care of */
+}
+#winner{
+	font-size: 40px;
+	text-shadow: 2px 2px 2px green;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+#name-0{
+	
+	position: absolute;
+	top:20px;
+	right:40px;	
+	color: red;
+}
+
+#name-1{
+	position: absolute;
+	top:50px;
+	right:40px;
+	color:black;
+}
+#currPlayer{
+	font-size: 30px;
+	position: absolute;
+	top: -22px;
+	right:40px;
+	color:black;
+}
+/*.blinking{
+	animation : blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+	0% {color: red;}
+	49%{color: red;}
+	60%{color:transparent;}
+	99%{color:transparent;}
+	100%{color: red;}
+}*/
+
